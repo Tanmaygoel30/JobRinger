@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -93,7 +93,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: #f0f4f8; */
+  background-color: #f0f4f8;
 }
 
 #searchSec-a {
@@ -104,7 +104,7 @@ nav {
 
 #searchBar {
   width: 100%;
-  /* max-width: 500px; */
+  max-width: 500px;
   height: 2.8rem;
   padding: 0 0.5rem;
   border-radius: 2rem;
@@ -209,7 +209,6 @@ nav {
 #jobCard {
   width: 90%;
   max-width: 400px;
-  /* margin: 0 auto; */
   background-color: #ffffff;
   padding: 1.5rem;
   border-radius: 1rem;
@@ -263,4 +262,917 @@ nav {
 
 #jobCard button:hover {
   background-color: #155ec6;
+} 
+*/
+
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header & Nav */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+}
+
+#logo img {
+  height: 60px;
+}
+
+.navButtons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navButtons ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navButtons a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navButtons a:hover {
+  color: #1e90ff;
+}
+
+.navButtons button {
+  padding: 0.4rem 0.8rem;
+  background: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.navButtons button:hover {
+  background: #005bb5;
+}
+
+main {
+  padding-top: 100px;
+}
+
+/* Hero Section */
+#heroSec {
+  background: linear-gradient(90deg, #e3f2fd, #f0f4ff);
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#div-employe {
+  font-size: 2rem;
+  color: #003366;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#div-offer {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#sec1-button button,
+#sec1-button a {
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+#sec1-button button:hover,
+#sec1-button a:hover {
+  background: #004a99;
+}
+
+/* Search Section */
+#searchSec {
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  max-width: 1000px;
+}
+
+#searchSec-a {
+  text-decoration: none;
+}
+
+#searchBar {
+  width: 80%;
+  margin: 1rem auto;
+  border: 2px solid #0077cc;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: white;
+  transition: box-shadow 0.3s;
+}
+
+#searchBar:hover {
+  box-shadow: 0 0 10px rgba(0, 119, 204, 0.4);
+}
+
+#searchBt {
+  background: #0077cc;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+#quickSearchSec {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+#quickSearchSec h3 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.quick-links a {
+  padding: 0.4rem 0.75rem;
+  background: #d0ebff;
+  color: #003366;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+.quick-links a:hover {
+  background: #90cfff;
+}
+
+#jobBt button {
+  margin: 1rem 0.5rem 0;
+  padding: 0.5rem 1.2rem;
+  background: #004a99;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+#jobBt button:hover {
+  background: #002c5f;
+}
+
+/* Featured Job Section */
+#sec-job {
+  padding: 2rem 5vw;
+  background-color: #f4f8fc;
+  text-align: center;
+}
+
+#sec-job h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1b1b1b;
+  font-weight: 600;
+}
+
+#card-Container1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#jobCard {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem 1rem;
+  width: calc(25% - 1.5rem); /* 4 cards with spacing */
+  transition: transform 0.4s ease, background-color 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+#jobCard:hover {
+  transform: scale(1.03);
+  background-color: #eaf3fb;
+}
+
+#jobCard h3 {
+  font-size: 1.2rem;
+  color: #1b4d89;
+  margin-bottom: 0.25rem;
+}
+
+#jobCard h4 {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+#jobInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
+#jobInfo div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+#jobInfo img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Job Type span */
+#jobCard > span {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #0073e6;
+  background-color: #e0f1ff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+#jobCard button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #1b4d89;
+  color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+#jobCard button:hover {
+  background-color: #153a65;
+}
+
+#sec-employers {
+  padding: 2.5rem 5vw;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#sec-employers h2 {
+  font-size: 2rem;
+  color: #1b1b1b;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  position: relative;
+}
+
+#card-Container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+#card-Container2 div {
+  padding: 1rem;
+  border: 1.5px solid #d1dbe8;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  max-width: 140px;
+}
+
+#card-Container2 div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+  border-color: #2b6cb0;
+}
+
+#card-Container2 div:hover img {
+  filter: brightness(1.2);
+  transform: scale(1.08);
+}
+
+#card-Container2 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.4s ease;
+  margin: auto;
+}
+
+#sec-Download {
+  background: url("https://www.jobringer.com/images/plays-storeimg.jpg")
+    no-repeat top right;
+  background-size: cover;
+  background-position: top right;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+#job-Download {
+  text-align: left;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+#job-Download h2 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  margin-bottom: 0.5rem;
+}
+
+#job-Download p span {
+  font-size: clamp(1.3rem, 3.5vw, 2rem);
+  font-weight: 500;
+}
+
+#job-Download h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  margin-top: 1.5rem;
+}
+
+#job-Download div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.img-play {
+  width: 130px;
+  height: auto;
+}
+
+/* === FOOTER BASE STYLES === */
+/* === FOOTER BASE STYLES === */
+#footer {
+  background: #0b2f47;
+  color: #d1e8ff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-top: 40px;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+
+/* WhatsApp floating icon */
+.whatsapp #float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 12px rgba(37, 211, 102, 0.4);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.whatsapp #float:hover {
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.7);
+  transform: scale(1.1);
+}
+
+.whatsapp #float i {
+  font-size: 28px;
+  animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+/* === job-city Section (Updated) === */
+.job-city {
+  padding: 30px 0;
+}
+
+.job-city .flex-holder {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 0;
+}
+
+.city-div {
+  flex: 1 1 300px;
+  padding: 25px 20px;
+  border: none;
+  border-right: 1px solid #a3c9e9;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.city-div:last-child {
+  border-right: none;
+}
+
+.titilecenter {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.city-job ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.city-job ul a {
+  text-decoration: none;
+  color: #0b2f47;
+  padding: 7px 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: color 0.25s ease;
+}
+
+.city-job ul a:hover {
+  color: #25d366;
+  text-decoration: underline;
+}
+
+/* === recurit-right Section (Updated) === */
+.recurit-right {
+  background: #ffffff;
+  padding: 40px 0;
+}
+
+.counter-list ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1100px;
+  flex-wrap: wrap;
+}
+
+.counter-list li {
+  flex: 1 1 200px;
+  max-width: 220px;
+  text-align: center;
+  padding: 15px 10px;
+  cursor: default;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.counter-text {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 1.05rem;
+}
+
+.count-number {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0b2f47;
+  transition: color 0.3s ease;
+}
+
+/* === main-op-ft Section (Unchanged) === */
+.main-op-ft {
+  background: #0b2f47;
+  color: #d1e8ff;
+  padding: 25px 15px;
+  user-select: none;
+}
+
+.footer-flex {
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.bold {
+  font-weight: 700;
+  color: #a9d6ff;
+}
+
+.disclaimer {
+  font-size: 0.9rem;
+  line-height: 1.3;
+  flex: 1 1 70%;
+  color: #bcd4ff;
+  margin: 0;
+}
+
+.footer-flex > div:last-child {
+  flex: 1 1 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-flex img {
+  max-width: 150px;
+  width: 100%;
+  filter: drop-shadow(0 0 3px rgba(255 255 255 / 0.4));
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-flex img:hover {
+  filter: drop-shadow(0 0 10px #a9d6ff);
+}
+
+/* === Social Icons === */
+.foll-info {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  user-select: none;
+  flex-wrap: wrap;
+}
+
+.foll-info p {
+  flex-shrink: 0;
+  margin: 0;
+  font-weight: 600;
+  color: #a9d6ff;
+}
+
+.foll-info a {
+  color: #d1e8ff;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.foll-info a:hover {
+  color: #25d366;
+  transform: scale(1.3);
+}
+
+/* === section-ft Section (Unchanged) === */
+.section-ft {
+  background: #082139;
+  color: #9bb9d3;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  user-select: none;
+  border-top: 1px solid #15426b;
+}
+
+.section-ft ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.section-ft ul li a {
+  text-decoration: none;
+  color: #9bb9d3;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.section-ft ul li a:hover {
+  color: #25d366;
+  text-decoration: underline;
+}
+
+.section-ft p {
+  margin: 0;
+  user-select: none;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .city-div {
+    flex: 1 1 45%;
+    border-right: none;
+    border-bottom: 1px solid #c2dffc;
+  }
+  .city-div:last-child {
+    border-bottom: none;
+  }
+  .counter-list ul {
+    gap: 30px;
+  }
+  .footer-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-flex .disclaimer {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+  .footer-flex > div:last-child {
+    flex-basis: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .city-div {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 20px;
+    border-right: none;
+  }
+  .counter-list ul {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .counter-list li {
+    max-width: 100%;
+    width: 280px;
+  }
+  .foll-info {
+    justify-content: center;
+  }
+  .section-ft ul {
+    gap: 15px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Responsive CSS === */
+
+/* Navbar */
+@media (max-width: 900px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  nav #logo img {
+    height: 45px;
+  }
+  nav .navButtons ul li a {
+    font-size: 0.85rem;
+  }
+  nav .navButtons button {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}
+
+/* Hero Section */
+@media (max-width: 900px) {
+  #heroSec {
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+  }
+  #heroSec #div-employe {
+    font-size: 1.8rem;
+  }
+  #heroSec #div-offer {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+  #sec1-button button {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
+  #sec1-button a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #heroSec #div-employe {
+    font-size: 1.5rem;
+  }
+  #heroSec #div-offer {
+    font-size: 1rem;
+  }
+  #sec1-button button {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+  #sec1-button a {
+    font-size: 0.85rem;
+  }
+}
+
+/* Search Section */
+@media (max-width: 900px) {
+  #searchSec {
+    padding: 1rem 1rem;
+  }
+  #searchBar span {
+    font-size: 1rem;
+  }
+  #searchBt {
+    padding: 8px 15px;
+  }
+  #quickSearchSec h3 {
+    font-size: 1.1rem;
+  }
+  #quickSearchSec .quick-links a {
+    font-size: 0.85rem;
+    margin: 4px 8px 4px 0;
+    padding: 4px 8px;
+  }
+  #jobBt button {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  #quickSearchSec .quick-links {
+    gap: 6px;
+  }
+  #quickSearchSec .quick-links a {
+    font-size: 0.8rem;
+    margin: 3px 6px 3px 0;
+    padding: 3px 6px;
+  }
+}
+
+/* --- sec-job: Show only cards that fit, hide the rest --- */
+
+#card-Container1 {
+  display: flex;
+  flex-wrap: nowrap; /* no wrap */
+  overflow: visible; /* no scroll */
+  gap: 1rem;
+  position: relative;
+}
+
+/* fixed card width */
+#card-Container1 > #jobCard {
+  flex: 0 0 280px;
+  min-width: 280px;
+}
+
+/* Hide cards that don't fit on screen */
+@media (max-width: 1200px) {
+  #card-Container1 > #jobCard:nth-child(n + 4) {
+    display: none;
+  }
+  #card-Container1 > #jobCard {
+    flex: 0 0 240px;
+    min-width: 240px;
+  }
+}
+@media (max-width: 900px) {
+  #card-Container1 > #jobCard:nth-child(n + 3) {
+    display: none;
+  }
+  #card-Container1 > #jobCard {
+    flex: 0 0 200px;
+    min-width: 200px;
+  }
+}
+@media (max-width: 600px) {
+  #card-Container1 > #jobCard:nth-child(n + 2) {
+    display: none;
+  }
+  #card-Container1 > #jobCard {
+    flex: 0 0 160px;
+    min-width: 160px;
+  }
+}
+
+/* --- sec-employers: Add spacing, reduce size, hide extras on smaller screens --- */
+
+#card-Container2 {
+  display: flex;
+  flex-wrap: nowrap; /* no wrap */
+  gap: 1.5rem; /* increased gap for desktop */
+  overflow: visible; /* no scroll */
+  padding-bottom: 0.5rem;
+  align-items: center;
+}
+
+#card-Container2 > div {
+  flex: 0 0 140px;
+  min-width: 140px;
+}
+
+@media (max-width: 1200px) {
+  #card-Container2 {
+    gap: 1rem;
+  }
+  #card-Container2 > div {
+    flex: 0 0 120px;
+    min-width: 120px;
+  }
+  #card-Container2 > div:nth-child(n + 5) {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  #card-Container2 {
+    gap: 0.8rem;
+  }
+  #card-Container2 > div {
+    flex: 0 0 100px;
+    min-width: 100px;
+  }
+  #card-Container2 > div:nth-child(n + 4) {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #card-Container2 {
+    gap: 0.6rem;
+  }
+  #card-Container2 > div {
+    flex: 0 0 80px;
+    min-width: 80px;
+  }
+  #card-Container2 > div:nth-child(n + 3) {
+    display: none;
+  }
 }
